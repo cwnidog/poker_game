@@ -9,10 +9,9 @@ var deck = new Array(53);
 function DealDraw(){
   if(dealt == true)
     Draw();
-
   else
     Deal();
-}
+} // DealDraw()
 
 function Deal(){
 
@@ -26,6 +25,7 @@ function Deal(){
 
   //shuffle the deck
   var n = Math.floor(400 * Math.random() + 500);
+
   for(i = 1; i < n; i++){
     card1 = Math.floor(52 * Math.random() + 1);
     card2 = Math.floor(52 * Math.random() + 1);

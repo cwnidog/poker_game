@@ -1,0 +1,31 @@
+body{
+  color: #003300;
+  padding: 0px;
+}
+
+.header__banner{
+  text-indent 20px;
+  margin-top: 0px;
+  padding: 2px;
+  width: 100%;
+}
+
+.header__img {
+  float: left;
+  height: 81px;
+  width: 381px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.blank__img{
+  border: 0px;
+  height: 136px;
+  width:104px;
+}
+
+.hold__img{
+  border: 0;
+  height: 50;
+  width: 106;
+}
