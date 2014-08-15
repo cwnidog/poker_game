@@ -41,7 +41,7 @@ function Deal(){
     document.images[i + 5].src = "card_images/hold.gif";
     held[i] = false;
   }
-  dealt[i] = true;
+  dealt = true;
   score -= 1; // deduct one for bet amount
   document.form1.total.value = score;
   document.images[11].src = "card_images/draw.gif";
@@ -109,7 +109,7 @@ function Addscore(){
   for(i = 0; i < 5; i++){
     nums[i] = hand[i + 1].num;
   }
-  nums.sort(Numsort);
+  nums.sort();
 
   //flush
   if(hand[1].suit == hand[2].suit && hand[2].suit == hand[3].suit &&
@@ -192,4 +192,3 @@ function Addscore(){
   document.form1.message.value = "No Score";
   return 0;
 } // Addscore()
-
