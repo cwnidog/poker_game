@@ -73,7 +73,6 @@ function Draw(){
       document.images[i].src = hand[i].fname();
     }
   }
-
   dealt = false;
   score += Addscore();
   document.form1.total.value = score;
