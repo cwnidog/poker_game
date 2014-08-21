@@ -1,0 +1,97 @@
+body{
+  color: #003300;
+  padding: 0px;
+}
+
+.container_12: {
+  border: 5px solid #ff0000;
+  border-radius: 10px;
+}
+
+.header__banner{
+  text-indent 20px;
+  margin-top: 0px;
+  padding: 2px;
+  width: 100%;
+}
+
+.header__img {
+  float: left;
+  height: 81px;
+  width: 381px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.blank__img {
+  background-color: #ffffcc;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  height: 136px;
+  width: 104px;
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-right: 8px;
+}
+.blank__img:after{
+  content ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.hold__img{
+  height: 65px;
+  width: 120px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.hold__img:after{
+  content ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.button__deal {
+  border: 1px solid #000000;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  height: 65px;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: auto;
+  width: 120px;
+}
+
+.button__clear--left{
+  clear: left;
+}
+
+#TotalScore {
+  margin-right: 25px;
+}
+
+.button__deal:after{
+  content ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.scoreboard {
+  clear: both;
+  margin-left: 25px;
+}

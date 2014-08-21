@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="description" content="Five-Card Daw Poker Game">
   <title>Draw Poker</title>
   <link rel="stylesheet" href="styles/normalize.css" type="text/css">
-  <link rel="stylesheet" href="styles/skeleton.css" type="text/css">
-  <link rel="stylesheet" href="styles/base.css" type="text/css">
-  </head>
-  <header role="banner" class:"header__banner sixteen columns">
-    <img src="card_images/title.gif" alt="Draw Poker" class="header__img--left">
-    <hr>
-  </header>
+  <link rel="stylesheet" href="styles/layout.css" type="text/css">
+  <link rel="stylesheet" href="styles/module.css" type="text/css">
+</head>
+  <header role="banner" class="header__banner container_12">
+  <img src="card_images/title.gif" alt="Draw Poker" class="header__img--left">
+  <hr>
+</header>
   <body>
-    <form NAME="form1">
-      <table>
-        <tr>
-          <td> <img class="blank__img" alt="Card 1" src="card_images/blank.gif"></td>
-          <td> <img class="blank__img" alt="Card 2" src="card_images/blank.gif"</td>
-          <td> <img class="blank__img" alt="Card 3" src="card_images/blank.gif"></td>
-          <td> <img class="blank__img" alt="Card 4" src="card_images/blank.gif"></td>
-          <td> <img class="blank__img" alt="Card 5" src="card_images/blank.gif"></td>
-        </tr>
-        <tr>
-          <td> <a href="#" onClick="Hold(1)"> <img class="hold__img" src="card_images/hold.gif"></a></td>
-          <td> <a href="#" onClick="Hold(2)"> <img class="hold__img" src="card_images/hold.gif"></a></td>
-          <td> <a href="#" onClick="Hold(3)"> <img class="hold__img" src="card_images/hold.gif"></a></td>
-          <td> <a href="#" onClick="Hold(4)"> <img class="hold__img" src="card_images/hold.gif"></a></td>
-          <td> <a href="#" onClick="Hold(5)"> <img class="hold__img" src="card_images/hold.gif"></a></td>
-        </tr>
+    <form NAME="form1" class="container12">
+      <section class="container10" id="cards">
+
+          <img class="blank__img" alt="Card 1" src="card_images/blank.gif" alt="blank card">
+          <img class="blank__img" alt="Card 2" src="card_images/blank.gif" alt="blank card">
+          <img class="blank__img" alt="Card 3" src="card_images/blank.gif" alt="blank card">
+          <img class="blank__img" alt="Card 4" src="card_images/blank.gif" alt="blank card">
+          <img class="blank__img" alt="Card 5" src="card_images/blank.gif" alt="blank card">
+
+          <a href="#" onClick="Hold(1)"> <img class="hold__img button__clear--left" src="card_images/hold.gif" alt="Hold button"></a>
+          <a href="#" onClick="Hold(2)"> <img class="hold__img" src="card_images/hold.gif" alt="Hold button"></a>
+          <a href="#" onClick="Hold(3)"> <img class="hold__img" src="card_images/hold.gif" alt="Hold button"></a>
+          <a href="#" onClick="Hold(4)"> <img class="hold__img" src="card_images/hold.gif" alt="Hold button"></a>
+          <a href="#" onClick="Hold(5)"> <img class="hold__img" src="card_images/hold.gif" alt="Hold button"></a>
+      </section>
+
+        <table class="scoreboard">
         <tr>
           <td> <b>Total<br>Score:</b> <input TYPE = "TEXT" SIZE=6 NAME="total" VALUE=100> </td>
-          <td colspan=2> <b>Current <br>Hand:</b><input TYPE="TEXT" SIZE=20 NAME="message" VALUE="Press DEAL to begin."></td>
-          <td> <a href="#" onClick="DealDraw()"><img border=0 src="card_images/deal.gif" height=50 width=106></a></td>
+          <td> <b>Current <br>Hand:</b><input TYPE="TEXT" SIZE=20 NAME="message" VALUE="Press DEAL to begin."></td>
+          <td><a href="#" onClick="DealDraw()"><img src="card_images/deal.gif" hreight="50" widht="106"alt="Deal or Draw button"></a><td>
         </tr>
       </table>
     </form>
